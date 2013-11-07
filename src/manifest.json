@@ -19,5 +19,15 @@
     "scripts": ["js/background.js"]
   },
 
-  "permissions": ["contentSettings", "tabs"]
+  "permissions": ["contentSettings", "tabs"],
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J",
+        "mac": "MacCtrl+Shift+J"
+      }
+    }
+  }
+
 }
