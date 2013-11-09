@@ -78,11 +78,11 @@ var ToggleJSApplication = {
 
     self.getState(incognito, function(state) {
       if (state.enabled) {
-        chrome.browserAction.setIcon({path: 'icons/32.png'});
+        chrome.browserAction.setIcon({path: 'icons/38-on.png'});
         chrome.browserAction.setTitle({title: 'JavaScript is enabled'});
       }
       else {
-        chrome.browserAction.setIcon({path: 'icons/32-off.png'});
+        chrome.browserAction.setIcon({path: 'icons/38-off.png'});
         chrome.browserAction.setTitle({title: 'JavaScript is disabled'});
       }
 

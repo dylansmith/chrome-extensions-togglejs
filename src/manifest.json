@@ -12,7 +12,7 @@
   },
 
   "browser_action": {
-    "default_icon": "icons/32.png"
+    "default_icon": "icons/38-on.png"
   },
 
   "background": {
@@ -29,5 +29,4 @@
       }
     }
   }
-
 }
