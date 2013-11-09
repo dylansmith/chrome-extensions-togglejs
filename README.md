@@ -29,3 +29,6 @@ Changelog
 
 Version 1.0 (9 November 2013)
 - Released initial version
+
+Version 1.1 (9 November 2013)
+- Updated icons
