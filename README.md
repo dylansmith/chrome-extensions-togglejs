@@ -1,5 +1,5 @@
-ToggleJS Chrome extension
-=========================
+Toggle JavaScript Chrome extension
+==================================
 
 This is the source code for the "JS Toggle" extension for Google Chrome or
 Chromium browsers.
@@ -12,14 +12,24 @@ extension and help me out by giving it a positive review at the Chrome Web Store
 Description
 -----------
 
-ToggleJS provides a simple, easy-to-access browser button to enable or disable
-JavaScript globally. Similar extensions do this per-domain, but I found that
-this over-complicates things a bit so I decided to build my own JavaScript
-"master switch" that was easy to use.
+Toggle JavaScript provides a simple, easy-to-access browser button to enable
+or disable JavaScript globally. Obviously Chrome allows you to do this, but
+the setting is a pain to access if you are a developer using it often.
 
-I've also found that similar extensions can cause the page to be rendered
-incorrectly when they reload the page after disabling JavaScript. I have
-found a way around this so that the page will reload reliably.
+### Features:
+
+- global JavaScript master switch
+- reloads pages reliably when disabling JavaScript
+
+### More Info:
+
+I found similar extensions that enable or disable JavaScript per-domain,
+but I found that this over-complicates things a bit so I decided to build
+this JavaScript "master switch".
+
+Also, similar extensions can cause pages to be rendered incorrectly when they
+are automatically reloaded after disabling JavaScript. I have found a way
+around this so that pages will reload reliably.
 
 I hope you enjoy using it - if you do, please tell your friends about it
 and help me out by giving it a positive review. Thanks!
@@ -32,3 +42,8 @@ Version 1.0 (9 November 2013)
 
 Version 1.1 (9 November 2013)
 - Updated icons
+
+Version 1.2 (11 November 2013)
+- Renamed to "Toggle JavaScript"
+- Updated readme
+- Improved browser action icons
