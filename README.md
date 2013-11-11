@@ -23,16 +23,16 @@ the setting is a pain to access if you are a developer using it often.
 
 ### More Info:
 
-I found similar extensions that enable or disable JavaScript per-domain,
-but I found that this over-complicates things a bit so I decided to build
-this JavaScript "master switch".
+There are similar extensions that enable or disable JavaScript per-domain, but
+I find that this over-complicates things a bit so I decided to build a
+JavaScript "master switch".
 
 Also, similar extensions can cause pages to be rendered incorrectly when they
 are automatically reloaded after disabling JavaScript. I have found a way
 around this so that pages will reload reliably.
 
-I hope you enjoy using it - if you do, please tell your friends about it
-and help me out by giving it a positive review. Thanks!
+I hope you enjoy using it - if you do, please tell your friends about it and
+help me out by giving it a positive review. Thanks!
 
 Changelog
 ---------
