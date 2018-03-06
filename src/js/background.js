@@ -77,8 +77,7 @@ var ToggleJSApplication = {
       if (cfg.norefresh === true) return;
       chrome.tabs.query({currentWindow: true, active: true}, function(tabs) {
         var tab = tabs[0];
-        chrome.tabs.duplicate(tab.id);
-        chrome.tabs.remove(tab.id);
+        chrome.tabs.reload(tab.id);
       });
     });
   },
