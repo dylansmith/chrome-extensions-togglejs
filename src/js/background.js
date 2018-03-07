@@ -17,6 +17,13 @@ var ToggleJSApplication = {
     });
   },
 
+  getConfig: function(cb) {
+    chrome.storage.sync.get(function(config) {
+      self.config = config;
+      cb(self.config);
+    });
+  },
+
   getState: function(incognito, callback) {
     var self = this,
         data = {
@@ -65,10 +72,13 @@ var ToggleJSApplication = {
   },
 
   reloadCurrentTab: function() {
-    chrome.tabs.query({currentWindow: true, active: true}, function(tabs) {
-      var tab = tabs[0];
-      chrome.tabs.duplicate(tab.id);
-      chrome.tabs.remove(tab.id);
+    const self = this;
+    self.getConfig(function(cfg) {
+      if (cfg.norefresh === true) return;
+      chrome.tabs.query({currentWindow: true, active: true}, function(tabs) {
+        var tab = tabs[0];
+        chrome.tabs.reload(tab.id);
+      });
     });
   },
 
